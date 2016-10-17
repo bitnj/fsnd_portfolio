@@ -1,0 +1,9 @@
+srcRoot: src/
+srcJSDir: src/js/
+srcCSSDir: src/css/
+srcImageDir: src/images/
+distRoot: dist/
+distJSDir: dist/js/
+distCSSDir: dist/css/
+distImageDir: dist/images/
+
