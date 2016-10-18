@@ -24,9 +24,12 @@ module.exports = function(grunt, config) {
         /* copy needed files into their appropriate dist directory */
         copy: {
             release: {
+                files: [{
                 expand: true,
-                src: config.srcRoot + '*',
-                dest: config.distRoot
+                cwd: config.srcRoot,
+                src: '**',
+                dest: config.distRoot,
+                filter: 'isFile'}]
             }
         }
     });

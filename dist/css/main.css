@@ -1,0 +1,9 @@
+/* main css file for build a portfolio project. */
+
+body {
+   font-family: 'Lato', sans-serif; 
+}
+
+.main-header-title {
+   font-size: 60px;
+}
