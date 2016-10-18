@@ -1,12 +1,10 @@
-module.exports = function(grunt, config) {
+module.exports = function (grunt, config) {
 
     /* configure tasks */
     grunt.config.merge({
         htmllint: {
-            options: {},
-            src: [
-                config.srcRoot + '*.html'
-            ],
-        },
-    })
-}
+            options: {force: true},
+            src: [config.srcRoot + '*.html']
+        }
+    });
+};

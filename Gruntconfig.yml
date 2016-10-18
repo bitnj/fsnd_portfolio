@@ -6,4 +6,3 @@ distRoot: dist/
 distJSDir: dist/js/
 distCSSDir: dist/css/
 distImageDir: dist/images/
-
