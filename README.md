@@ -3,7 +3,7 @@
 
 This project implements a simple webpage that uses
 
-1. Bootstrap
+1. Bootstrap  
 **. Typography  
 **. Grid System  
 **. Modal  
