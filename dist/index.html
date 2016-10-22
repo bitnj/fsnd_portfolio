@@ -11,21 +11,165 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300"
               rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet"
+              href="http://weloveiconfonts.com/api/?family=brandico">
         <title>Project Portfolio</title>
     </head>
     <body>
-        <!--main bootstrap container object for the page-->
+        <!--bootstrap container object for the page-->
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img class="img-responsive" src="dist/images/logo.jpg"
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <img class="img-responsive img-thumbnail top-header-logo" src="images/logo.jpg"
                                                 alt="bike racer">
                 </div>
-                <div class="col-md-6 text-right text-uppercase">
-                    <h1 class="main-header-title">Neil Seas</h1>
+                <div class="col-xs-6 col-sm-6 col-md-6 text-right text-uppercase">
+                    <h1 class="top-header-title">Neil Seas</h1>
+                    <h3 class="top-header-subtitle">seeker</h3>
                 </div>
             </div>
+            <!--break before main image-->
+            <hr id="header-break" size="10px">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="img-responsive" src="images/lake.jpg"
+                    alt="picture of lake">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="project-section-title text-left">Featured Work</h2>
+                </div>
+            </div>
+            <div class="row project-section">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" 
+                        src="http://placehold.it/350x150" alt="swiss tournment
+                        bracket" data-toggle="modal"
+                        data-target="#swiss-tournament">
+                    <h3 class="project-title text-uppercase">Swiss Tournament</h3>
+                    <p>
+                        <a
+                        href="https://github.com/bitnj/ipnd_backend_dev_project"
+                        target="_blank">GitHub repo</a>
+                    </p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" 
+                        src="http://placehold.it/350x150" alt="movie reel" 
+                                                          data-toggle="modal"
+                                                          data-target="#movie-trailers">
+                    <h3 class="project-title text-uppercase">Movie Trailer Website</h3>
+                    <p>
+                        <a
+                            href="https://github.com/bitnj/ipnd_project3"
+                            target="_blank">GitHub repo</a>
+                    </p>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                    <img class="img-responsive" 
+                        src="http://placehold.it/350x150" alt="quiz" 
+                                                          data-toggle="modal"
+                                                          data-target="#quiz">
+                    <h3 class="project-title text-uppercase">Fill in the Blanks Quiz</h3>
+                    <p>
+                        <a
+                            href="https://github.com/bitnj/ipnd_project2"
+                            target="_blank">GitHub repo</a>
+                    </p>
+                </div>
+            </div>
+            <!--break before footer section-->
+            <hr id="footer-break" size="10px">
+            <!--beginning of footer section-->
+            <div class="row">
+                <footer>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="social">
+                        <a href="https://github.com/bitnj" target="_blank"
+                            class="brandico-github">GitHub</a>
+                        <a href="https://www.linkedin.com/in/neil-seas-646296a" target="_blank"
+                            class="brandico-linkedin">Linked-In</a>
+                        <a href="https://www.twitter.com/NeilSeas" target="_blank"
+                            class="brandico-twitter-bird">Twitter</a>
+                    </div>
+                </footer>
+            </div>
         </div>
+
+        <!--definitions of modals that display project descriptions-->
+        <!--modal for swiss tournament project-->
+        <div class="modal fade" id="swiss-tournament" tabindex="-1"
+                                                      role="dialog"
+                                                      aria-labelledby="swiss
+                                                      tournament details"
+                                                      aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Swiss Tournament</h4>
+                    </div>
+                    <div class="modal-body">
+                        This project uses Python and a simple PostgreSQL
+                        database to generate Swiss Style tournament player
+                        pairings.  It was built according to spec provided in
+                        the Intro to Programming Nanodegree program from
+                        Udacity.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                                              data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+       </div>
+        
+       <!--modal for movie trailer website-->
+       <div class="modal fade" id="movie-trailers" tabindex="-1"
+                                                      role="dialog"
+                                                      aria-labelledby="swiss
+                                                      tournament details"
+                                                      aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Movie Trailer Website</h4>
+                    </div>
+                    <div class="modal-body">
+                        This project uses Python to generate a simple website
+                        for displaying and playing movie trailers.  It was built
+                        according to the spec provided in the Intro to
+                        Programming Nanodegree from Udacity.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                                              data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+       </div>
+      
+       <!--modal for fill in the blank quiz-->
+       <div class="modal fade" id="quiz" tabindex="-1"
+                                              role="dialog"
+                                              aria-labelledby="swiss
+                                              tournament details"
+                                              aria-hidden="true">
+           <div class="modal-dialog">
+               <div class="modal-content">
+                   <div class="modal-header">
+                       <h4 class="modal-title">Fill in the Blank Quiz</h4>
+                   </div>
+                   <div class="modal-body">
+                       This project utilizes Python to display and check a fill
+                       in the blank quiz.
+                   </div>
+                   <div class="modal-footer">
+                       <button type="button" class="btn btn-default"
+                                             data-dismiss="modal">Close</button>
+                   </div>
+               </div>
+           </div>
+       </div>
     </body>
 </html>
 

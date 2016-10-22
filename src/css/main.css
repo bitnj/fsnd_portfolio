@@ -1,9 +1,58 @@
-/* main css file for build a portfolio project. */
-
-body {
-   font-family: 'Lato', sans-serif; 
+/* brandico family for icon fonts in footer */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+  display: inline-block;
+  color: black;
+  text-shadow: 3px 3px 3px #aaa;
+  padding: 10px;
 }
 
-.main-header-title {
-   font-size: 60px;
+/* main css file for build a portfolio project. */
+body {
+   font-family: 'Lato', sans-serif;
+   color: #2d3c49;
+   font-weight: 300;
+}
+
+hr {
+    border-width: 2px;
+}
+
+#header-break {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer-break {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* styling for the top header section */
+.top-header-logo {
+    margin-top: 20px;
+}
+
+.top-header-title {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.top-header-subtitle {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* styling for the featured work section */
+.project-section {
+    text-align: center;
+}
+
+.project-section-title {
+    color: #7d97ad;
+}
+
+.project-title {
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
