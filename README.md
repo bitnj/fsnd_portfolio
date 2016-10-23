@@ -4,9 +4,9 @@
 This project implements a simple webpage that uses
 
 1. Bootstrap  
-..* Typography  
-..* Grid System  
-..* Modal  
+  * Typography  
+  * Grid System  
+  * Modal  
 2. CSS
 3. Grunt
 
