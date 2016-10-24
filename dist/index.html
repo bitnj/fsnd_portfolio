@@ -20,7 +20,7 @@
     <body>
         <!--bootstrap container object for the page-->
         <div class="container">
-            <div class="row">
+            <header class="row">
                 <div class="col-xs-4">
                     <img class="img-responsive img-thumbnail top-header-logo"
                          src="img/logo.jpg"
@@ -30,9 +30,9 @@
                     <h1 class="top-header-title">Neil Seas</h1>
                     <h3 class="top-header-subtitle">seeker</h3>
                 </div>
-            </div>
+            </header>
             <!--break before main image-->
-            <hr id="header-break" size="10px">
+            <hr id="header-break">
             <div class="row">
                 <div class="col-md-12">
                     <img class="img-responsive" src="img/lake.jpg"
@@ -44,8 +44,8 @@
                     <h2 class="project-section-title text-left">Featured Work</h2>
                 </div>
             </div>
-            <div class="row project-section">
-                <div class="col-xs-6 col-md-4">
+            <main class="row project-section">
+                <article class="col-xs-6 col-md-4">
                     <img class="img-responsive" 
                         src="img/chess.jpg" alt="swiss tournment
                         bracket" data-toggle="modal"
@@ -56,8 +56,8 @@
                         href="https://github.com/bitnj/ipnd_backend_dev_project"
                         target="_blank">GitHub repo</a>
                     </p>
-                </div>
-                <div class="col-xs-6 col-md-4">
+                </article>
+                <article class="col-xs-6 col-md-4">
                     <img class="img-responsive" 
                         src="img/film-case.jpg" alt="movie reel" 
                                                           data-toggle="modal"
@@ -68,8 +68,8 @@
                             href="https://github.com/bitnj/ipnd_project3"
                             target="_blank">GitHub repo</a>
                     </p>
-                </div>
-                <div class="col-xs-6 col-md-4">
+                </article>
+                <article class="col-xs-6 col-md-4">
                     <img class="img-responsive" 
                         src="img/colored-pencil.jpg" alt="quiz" 
                                                           data-toggle="modal"
@@ -80,10 +80,10 @@
                             href="https://github.com/bitnj/ipnd_project2"
                             target="_blank">GitHub repo</a>
                     </p>
-                </div>
-            </div>
+                </article>
+            </main>
             <!--break before footer section-->
-            <hr id="footer-break" size="10px">
+            <hr id="footer-break">
             <!--beginning of footer section-->
             <footer>
                 <div class="row">
@@ -108,8 +108,8 @@
                                                       aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Swiss Tournament</h4>
+                    <div class="modal-title">
+                        <h4 id="swiss tournament details">Swiss Tournament</h4>
                     </div>
                     <div class="modal-body">
                         This project uses Python and a simple PostgreSQL
@@ -129,13 +129,13 @@
        <!--modal for movie trailer website-->
        <div class="modal fade" id="movie-trailers" tabindex="-1"
                                                       role="dialog"
-                                                      aria-labelledby="swiss
-                                                      tournament details"
+                                                      aria-labelledby="movie
+                                                      trailer details"
                                                       aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Movie Trailer Website</h4>
+                    <div class="modal-title">
+                        <h4 id="movie trailer details">Movie Trailer Website</h4>
                     </div>
                     <div class="modal-body">
                         This project uses Python to generate a simple website
@@ -154,13 +154,12 @@
        <!--modal for fill in the blank quiz-->
        <div class="modal fade" id="quiz" tabindex="-1"
                                               role="dialog"
-                                              aria-labelledby="swiss
-                                              tournament details"
+                                              aria-labelledby="quiz details"
                                               aria-hidden="true">
            <div class="modal-dialog">
                <div class="modal-content">
-                   <div class="modal-header">
-                       <h4 class="modal-title">Fill in the Blank Quiz</h4>
+                   <div class="modal-title">
+                       <h4 id="quiz details">Fill in the Blank Quiz</h4>
                    </div>
                    <div class="modal-body">
                        This project utilizes Python to display and check a fill
